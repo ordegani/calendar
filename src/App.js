@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+  const events = [{
+    start: 90,
+    end: 130,
+  },
+  {
+    start: 105,
+    end: 130,
+  },
+  ];
+  // const obj={id:(events.indexOf(element)+1)};
+  const arrEvents = [];
+
+  events.forEach(element => element.left=0);
+  events.forEach(element => element.width=0);
+
+  events.forEach(element => arrEvents.push(element));
+  console.log(arrEvents);
+  return (
+    <div className='container'>
+      hi
+    </div>
+  )
+}
 export default App;
