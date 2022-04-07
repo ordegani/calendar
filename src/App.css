@@ -1,0 +1,39 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+}
+.left{
+  background-color: white;
+}
+.eventsContainer{
+  width:600px;
+  height: 720px;
+  background-color: rgb(240, 233, 233);  
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 2rem;
+}
+.event{
+  background-color: transparent;
+  position: absolute;
+  color: rgb(55, 55, 182);
+  border: grey 1px solid;
+  font-size: small;
+  text-align: start;
+  margin-left: 2rem;
+}
+.hours{
+  display: flex;
+  flex-direction: column;
+}
+.hour{
+  display: flex;
+  flex-direction: column;
+  /* align-items: stretch; */
+}
+.hour > p{
+font-size: xx-small;
+height: 12px;
+}
+
