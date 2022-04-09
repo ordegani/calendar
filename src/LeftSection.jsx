@@ -17,18 +17,30 @@ export default function LeftSection() {
     console.log(arr);
     console.log(arr1);
     console.log(arr2);
-    return (
+return (
         <div className='hours'>{
-            arr.map((hour, index) => {
+            arr.slice(0, 4).map((hour, index) => {
                 return (
                     <div className='hour'>
-                        <p>{hour}:00</p>
+                        <p>{hour}:00 am</p>
                         <p>{hour}:30</p>
                     </div>
 
                 )
             })
-        }</div>
+        }
+            {
+                arr.slice(4, 13).map((hour, index) => {
+                    return (
+                        <div className='hour'>
+                            <p>{hour}:00 pm</p>
+                            <p>{hour}:30</p>
+                        </div>
+
+                    )
+                })
+            }
+        </div>
     )
 }
 
