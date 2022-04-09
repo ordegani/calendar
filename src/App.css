@@ -9,7 +9,7 @@
 .eventsContainer{
   width:600px;
   height: 720px;
-  background-color: rgb(240, 233, 233);  
+  background-color: #ECECEC;  
   display: grid;
   grid-template-columns: 33% 33% 33%;
   padding: 2rem;
@@ -17,11 +17,18 @@
 .event{
   background-color: transparent;
   position: absolute;
-  color: rgb(55, 55, 182);
-  border: grey 1px solid;
+  color: #92A7CA;
+  font-weight: bolder;
+  border-left: 2px solid #92A7CA;
   font-size: small;
-  text-align: start;
   margin-left: 2rem;
+  padding-left: 2px;
+}
+.event > p{
+  font-weight: lighter;
+  font-size: xx-small;
+  color: #7E7E7E;
+  margin-top: 0px;
 }
 .hours{
   display: flex;
@@ -30,10 +37,18 @@
 .hour{
   display: flex;
   flex-direction: column;
-  /* align-items: stretch; */
+  text-align: end;
 }
 .hour > p{
+  padding-top: 12px;
+  height: 0px;
+  color: #7E7E7E;
+}
+.hour > :nth-child(1){
 font-size: xx-small;
-height: 12px;
+font-weight: bolder;
+}
+.hour > :nth-child(2){
+  font-size: xx-small;
 }
 
