@@ -22,7 +22,7 @@ return (
             arr.slice(0, 4).map((hour, index) => {
                 return (
                     <div className='hour'>
-                        <p>{hour}:00 am</p>
+                        <p>{hour}:00am</p>
                         <p>{hour}:30</p>
                     </div>
 
@@ -33,7 +33,7 @@ return (
                 arr.slice(4, 13).map((hour, index) => {
                     return (
                         <div className='hour'>
-                            <p>{hour}:00 pm</p>
+                            <p>{hour}:00pm</p>
                             <p>{hour}:30</p>
                         </div>
 
